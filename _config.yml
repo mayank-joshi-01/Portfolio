@@ -1,0 +1,6 @@
+# GitHub Pages (Jekyll): keep working notes and unrelated files off the public site
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - demo.gif
+  - me/

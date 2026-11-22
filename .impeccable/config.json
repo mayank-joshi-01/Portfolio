@@ -59,6 +59,16 @@
         ],
         "createdAt": "2026-11-22T12:40:34.582Z",
         "reason": "Claude's call: legacy/v2.html is a verbatim archive of the replaced page (cp of the old index.html), not a live surface under design."
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          "legacy/index.html",
+          "legacy/v2.html"
+        ],
+        "createdAt": "2026-11-22T13:39:40.818Z",
+        "reason": "Claude's call: legacy/ holds archived earlier versions of the site (noindexed), kept with their original fonts; DESIGN.md describes only the current index.html."
       }
     ]
   }
