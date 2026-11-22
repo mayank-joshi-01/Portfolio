@@ -1,0 +1,65 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-11-21T14:01:41.027Z",
+        "reason": "Claude: matches reference Ascii-Animals extension renderer font (\"Geist Mono\") the user asked to emulate"
+      },
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-11-21T14:01:41.038Z",
+        "reason": "Claude: matches demo.gif reference UI typeface the user asked to emulate"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "ascii/index.html"
+        ],
+        "createdAt": "2026-11-21T14:01:41.048Z",
+        "reason": "Claude: live date line deliberately mirrors demo.gif new-tab clock above greeting"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "ascii/index.html"
+        ],
+        "createdAt": "2026-11-21T14:27:38.588Z",
+        "reason": "Claude: .tl border-bottom sits under a row with 20px head padding / 30px body padding; detector reads the collapsed 0fr body as flush"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-22T12:38:40.558Z",
+        "reason": "Case-file world: hairline rules are report cell edges (sheet, header fields, margin column, findings rows, dialog); each child carries its own padding."
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-22T12:38:40.573Z",
+        "reason": "The 10px cell grid is the brand's live canvas; the CSS grid only mirrors it under the scan overlay and dialog."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "legacy/v2.html"
+        ],
+        "createdAt": "2026-11-22T12:40:34.582Z",
+        "reason": "Claude's call: legacy/v2.html is a verbatim archive of the replaced page (cp of the old index.html), not a live surface under design."
+      }
+    ]
+  }
+}

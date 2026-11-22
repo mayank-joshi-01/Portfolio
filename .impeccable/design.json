@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T13:08:05.752578+00:00",
+  "title": "Design System: Mayank Joshi",
+  "extensions": {
+    "colorMeta": {
+      "action-green": {
+        "role": "primary",
+        "displayName": "Status Green",
+        "canonical": "oklch(78.0% 0.145 158)",
+        "tonalRamp": [
+          "oklch(15% 0.047 158)",
+          "oklch(26% 0.083 158)",
+          "oklch(38% 0.119 158)",
+          "oklch(49% 0.145 158)",
+          "oklch(61% 0.145 158)",
+          "oklch(72% 0.145 158)",
+          "oklch(84% 0.114 158)",
+          "oklch(95% 0.078 158)"
+        ]
+      },
+      "finding-coral": {
+        "role": "secondary",
+        "displayName": "Finding Coral",
+        "canonical": "oklch(68.0% 0.163 28)",
+        "tonalRamp": [
+          "oklch(15% 0.053 28)",
+          "oklch(26% 0.094 28)",
+          "oklch(38% 0.134 28)",
+          "oklch(49% 0.163 28)",
+          "oklch(61% 0.163 28)",
+          "oklch(72% 0.163 28)",
+          "oklch(84% 0.129 28)",
+          "oklch(95% 0.088 28)"
+        ]
+      },
+      "exhibit-amber": {
+        "role": "tertiary",
+        "displayName": "Exhibit Amber",
+        "canonical": "oklch(78.9% 0.144 75)",
+        "tonalRamp": [
+          "oklch(15% 0.047 75)",
+          "oklch(26% 0.083 75)",
+          "oklch(38% 0.118 75)",
+          "oklch(49% 0.144 75)",
+          "oklch(61% 0.144 75)",
+          "oklch(72% 0.144 75)",
+          "oklch(84% 0.114 75)",
+          "oklch(95% 0.078 75)"
+        ]
+      },
+      "research-blue": {
+        "role": "tertiary",
+        "displayName": "Research Blue",
+        "canonical": "oklch(67.1% 0.174 269)",
+        "tonalRamp": [
+          "oklch(15% 0.056 269)",
+          "oklch(26% 0.099 269)",
+          "oklch(38% 0.142 269)",
+          "oklch(49% 0.174 269)",
+          "oklch(61% 0.174 269)",
+          "oklch(72% 0.174 269)",
+          "oklch(84% 0.137 269)",
+          "oklch(95% 0.094 269)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(89.8% 0.024 91)",
+        "tonalRamp": [
+          "oklch(15% 0.008 91)",
+          "oklch(26% 0.014 91)",
+          "oklch(38% 0.019 91)",
+          "oklch(49% 0.024 91)",
+          "oklch(61% 0.024 91)",
+          "oklch(72% 0.024 91)",
+          "oklch(84% 0.019 91)",
+          "oklch(95% 0.013 91)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Report Ink",
+        "canonical": "oklch(93.7% 0.008 271)",
+        "tonalRamp": [
+          "oklch(15% 0.003 271)",
+          "oklch(26% 0.005 271)",
+          "oklch(38% 0.007 271)",
+          "oklch(49% 0.008 271)",
+          "oklch(61% 0.008 271)",
+          "oklch(72% 0.008 271)",
+          "oklch(84% 0.007 271)",
+          "oklch(95% 0.005 271)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Graphite",
+        "canonical": "oklch(75.4% 0.021 267)",
+        "tonalRamp": [
+          "oklch(15% 0.007 267)",
+          "oklch(26% 0.012 267)",
+          "oklch(38% 0.017 267)",
+          "oklch(49% 0.021 267)",
+          "oklch(61% 0.021 267)",
+          "oklch(72% 0.021 267)",
+          "oklch(84% 0.017 267)",
+          "oklch(95% 0.011 267)"
+        ]
+      },
+      "dim": {
+        "role": "neutral",
+        "displayName": "Dim Graphite",
+        "canonical": "oklch(65.7% 0.028 269)",
+        "tonalRamp": [
+          "oklch(15% 0.009 269)",
+          "oklch(26% 0.016 269)",
+          "oklch(38% 0.023 269)",
+          "oklch(49% 0.028 269)",
+          "oklch(61% 0.028 269)",
+          "oklch(72% 0.028 269)",
+          "oklch(84% 0.022 269)",
+          "oklch(95% 0.015 269)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "oklch(17.7% 0.013 264)",
+        "tonalRamp": [
+          "oklch(15% 0.004 264)",
+          "oklch(26% 0.008 264)",
+          "oklch(38% 0.011 264)",
+          "oklch(49% 0.013 264)",
+          "oklch(61% 0.013 264)",
+          "oklch(72% 0.013 264)",
+          "oklch(84% 0.011 264)",
+          "oklch(95% 0.007 264)"
+        ]
+      },
+      "well": {
+        "role": "neutral",
+        "displayName": "Well",
+        "canonical": "oklch(19.6% 0.015 267)",
+        "tonalRamp": [
+          "oklch(15% 0.005 267)",
+          "oklch(26% 0.009 267)",
+          "oklch(38% 0.012 267)",
+          "oklch(49% 0.015 267)",
+          "oklch(61% 0.015 267)",
+          "oklch(72% 0.015 267)",
+          "oklch(84% 0.012 267)",
+          "oklch(95% 0.008 267)"
+        ]
+      },
+      "bar": {
+        "role": "neutral",
+        "displayName": "Bar",
+        "canonical": "oklch(15.4% 0.009 264)",
+        "tonalRamp": [
+          "oklch(15% 0.003 264)",
+          "oklch(26% 0.005 264)",
+          "oklch(38% 0.008 264)",
+          "oklch(49% 0.009 264)",
+          "oklch(61% 0.009 264)",
+          "oklch(72% 0.009 264)",
+          "oklch(84% 0.007 264)",
+          "oklch(95% 0.005 264)"
+        ]
+      },
+      "action-green-hover": {
+        "role": "primary",
+        "displayName": "Status Green, hover"
+      },
+      "action-ink": {
+        "role": "primary",
+        "displayName": "Action Ink",
+        "purpose": "Text on the green action fill."
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule"
+      },
+      "rule-faint": {
+        "role": "neutral",
+        "displayName": "Faint Rule"
+      },
+      "grid-line": {
+        "role": "neutral",
+        "displayName": "Grid Line",
+        "purpose": "10px cell canvas lines; also the faint grid over resolved portraits at .05 alpha."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single top headline; second line in bone."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Finding statements, employers, exhibit and log titles."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "One paragraph under each heading, soft."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose and evidence lists."
+      },
+      "label": {
+        "displayName": "Field Label",
+        "purpose": "Mono uppercase labels and legends."
+      },
+      "data": {
+        "displayName": "Field Data",
+        "purpose": "IDs, dates, refs, counts, tags, notes; tabular figures."
+      }
+    },
+    "shadows": [
+      {
+        "name": "nav-current",
+        "value": "inset 0 -2px 0 var(--c)",
+        "purpose": "The only shadow: a 2px underline on the current report-bar link."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-report",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing for scans, bar slide, timeline expand, icon nudges."
+      },
+      {
+        "name": "scan-reveal",
+        "value": "1s (1.15s for the case block), once per part",
+        "purpose": "Green 2px scan line travels top to bottom while a gridded overlay clips away; triggered at 12% inside the viewport."
+      },
+      {
+        "name": "state-hover",
+        "value": "200ms",
+        "purpose": "Background, border and colour changes on hover."
+      },
+      {
+        "name": "timeline-expand",
+        "value": "450ms grid-template-rows",
+        "purpose": "Commit rows open; plus icon rotates 45deg over 350ms."
+      },
+      {
+        "name": "bar-slide",
+        "value": "550ms translateY",
+        "purpose": "Report bar enters once the case header leaves."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "Lenis lerp .09; anchors 1.4s ease-in-out cubic",
+        "purpose": "Choreographed scroll; disabled under reduced motion."
+      },
+      {
+        "name": "hero-parallax",
+        "value": "factors .2 / .13 / .08 / -.05 of scrollY above 900px",
+        "purpose": "Headline, lede, tags and exhibit separate in depth."
+      },
+      {
+        "name": "heading-settle",
+        "value": "7vw to 0, cubic out over 55% of the viewport",
+        "purpose": "Section headings settle in from the right as they scroll up."
+      },
+      {
+        "name": "frame-open",
+        "value": "clip inset 12% to 0, once",
+        "purpose": "The featured product exhibit opens with scroll and stays open."
+      },
+      {
+        "name": "status-pulse",
+        "value": "2.4s steps(1)",
+        "purpose": "Available-now square; stepped, not eased."
+      },
+      {
+        "name": "lens-hop",
+        "value": "6% scale pulse over 500ms",
+        "purpose": "Glass lens hops onto the face every 4 to 7.5s; springs to the pointer on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Removes scans, Lenis, parallax, pulses, bar and expand transitions; portraits render resolved."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-trim",
+        "value": "1280px"
+      },
+      {
+        "name": "tablet",
+        "value": "1100px"
+      },
+      {
+        "name": "single-column",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "760px"
+      },
+      {
+        "name": "small-phone",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ruled Button",
+      "kind": "button",
+      "refersTo": "button-ruled",
+      "description": "Square ruled button for secondary actions (work history, copy, links).",
+      "html": "<button class=\"ds-btn\">Work history <svg width=\"16\" height=\"16\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"square\"><path d=\"M3 10h13M11 5l5 5-5 5\"/></svg></button>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid var(--line,rgba(255,255,255,.12));border-radius:0;background:transparent;color:var(--ink,#e8eaf0);font:600 15px/1 var(--sans,'Geist',sans-serif);letter-spacing:-.005em;cursor:pointer;transition:background .2s,border-color .2s,color .2s} .ds-btn svg{transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))} .ds-btn:hover svg{transform:translateX(3px)} .ds-btn:focus-visible{outline:2px solid var(--green,#55d394);outline-offset:3px} .ds-btn:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.24)}"
+    },
+    {
+      "name": "Action Button",
+      "kind": "button",
+      "refersTo": "button-action",
+      "description": "The one filled control: email. Status Green fill, near-black text.",
+      "html": "<a class=\"ds-btn ds-btn-go\" href=\"#\">Email Mayank <svg width=\"16\" height=\"16\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"square\"><path d=\"M3 10h13M11 5l5 5-5 5\"/></svg></a>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid var(--line,rgba(255,255,255,.12));border-radius:0;background:transparent;color:var(--ink,#e8eaf0);font:600 15px/1 var(--sans,'Geist',sans-serif);letter-spacing:-.005em;cursor:pointer;transition:background .2s,border-color .2s,color .2s} .ds-btn svg{transition:transform .3s var(--ease,cubic-bezier(.16,1,.3,1))} .ds-btn:hover svg{transform:translateX(3px)} .ds-btn:focus-visible{outline:2px solid var(--green,#55d394);outline-offset:3px} .ds-btn-go{background:var(--green,#55d394);border-color:var(--green,#55d394);color:#06140c;text-decoration:none} .ds-btn-go:hover{background:#74e2aa;border-color:#74e2aa}"
+    },
+    {
+      "name": "Legend on a Rule",
+      "kind": "custom",
+      "refersTo": "legend",
+      "description": "Mono uppercase label sitting on a box's top rule, cutting the line; names the box.",
+      "html": "<div class=\"ds-box\"><span class=\"ds-lg\" style=\"--c:#f0ab3e\">Exhibit A · subject</span><p>Box content</p></div>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-box{position:relative;border:1px solid var(--line,rgba(255,255,255,.12));padding:32px 24px 24px;background:var(--bg,#0e1117);color:var(--soft,#a9afbd);font:400 15px/1.5 var(--sans)} .ds-lg{position:absolute;top:0;left:24px;transform:translateY(-50%);padding:2px 8px;background:var(--bg,#0e1117);font:500 11.5px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--c,var(--dim,#8a91a3));white-space:nowrap}"
+    },
+    {
+      "name": "Header Field Strip",
+      "kind": "nav",
+      "refersTo": "header-field",
+      "description": "Rule-divided field cells: dim mono label over a mono value; status in green with a stepped pulse.",
+      "html": "<div class=\"ds-hdr\"><div class=\"ds-fld\"><span class=\"ds-l\">Case</span><b>MJ-2026</b></div><div class=\"ds-fld ds-subj\"><span class=\"ds-l\">Subject</span><b>Mayank Joshi</b></div><div class=\"ds-fld ds-st\"><span class=\"ds-l\">Status</span><b>Available now</b></div></div>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-hdr{display:flex;border:1px solid var(--line,rgba(255,255,255,.12));background:var(--bg,#0e1117)} .ds-fld{display:flex;flex-direction:column;gap:4px;padding:13px 22px;border-right:1px solid var(--line,rgba(255,255,255,.12))} .ds-l{font:500 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim,#8a91a3)} .ds-fld b{font:500 13.5px/1.3 var(--mono);color:var(--ink,#e8eaf0)} .ds-subj b{font:600 16px/1.3 var(--sans);letter-spacing:-.01em} .ds-st b{color:var(--green,#55d394);display:flex;align-items:center;gap:8px} .ds-st b::before{content:'';width:8px;height:8px;background:var(--green,#55d394);animation:ds-pulse 2.4s steps(1) infinite} @keyframes ds-pulse{50%{opacity:.35}} @media (prefers-reduced-motion:reduce){.ds-st b::before{animation:none}}"
+    },
+    {
+      "name": "Indicator Tags",
+      "kind": "chip",
+      "refersTo": "indicator-tag",
+      "description": "Outline-only evidence tags, each in the accent of its claim type.",
+      "html": "<ul class=\"ds-ind\"><li style=\"--c:#ec6a5e\">RuleForge · 0 to 1</li><li style=\"--c:#f0ab3e\">100+ production detections</li><li style=\"--c:#55d394\">SIEM · SOAR · EDR from zero</li><li style=\"--c:#6b8cff\">XCSSET in 40 repos</li></ul>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-ind{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:16px;list-style:none;background:var(--bg,#0e1117)} .ds-ind li{font:400 12.5px/1.3 var(--mono);padding:6px 10px;border:1px solid var(--c);color:var(--c)}"
+    },
+    {
+      "name": "Finding Row",
+      "kind": "custom",
+      "description": "Ruled finding: coral mono ID with a bone category tag, title-size statement, amber-square evidence list.",
+      "html": "<div class=\"ds-fnd\"><div class=\"ds-fid\"><b>F-04</b><span>Detection</span></div><h3>Knows the buyer's job from the inside.</h3><ul><li><b>100+ production detections</b> at OneCard.</li><li>SIEM, SOAR, EDR stood up <b>from zero</b>.</li></ul></div>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-fnd{display:grid;grid-template-columns:112px minmax(0,1.05fr) minmax(0,1fr);gap:12px 32px;padding:28px 0;border-top:1px solid var(--line2,rgba(255,255,255,.07));border-bottom:1px solid var(--line2,rgba(255,255,255,.07));background:var(--bg,#0e1117);color:var(--ink,#e8eaf0);font-family:var(--sans)} .ds-fid{display:flex;flex-direction:column;align-items:flex-start;gap:10px} .ds-fid b{font:500 14px/1 var(--mono);color:var(--coral,#ec6a5e)} .ds-fid span{font:400 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;border:1px solid rgba(227,221,204,.4);color:var(--bone,#e3ddcc)} .ds-fnd h3{margin:0;font-size:28px;font-weight:600;letter-spacing:-.03em;line-height:1.08} .ds-fnd ul{margin:0;padding:0;list-style:none;display:grid;gap:10px} .ds-fnd li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.5;color:var(--soft,#a9afbd)} .ds-fnd li::before{content:'';position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--amber,#f0ab3e)} .ds-fnd li b{color:var(--ink,#e8eaf0);font-weight:600}"
+    },
+    {
+      "name": "Exhibit Frame",
+      "kind": "card",
+      "refersTo": "exhibit-note",
+      "description": "Pixel exhibit in four amber crop marks with an amber mono annotation note.",
+      "html": "<div class=\"ds-frame\"><i class=\"ds-mk a1\"></i><i class=\"ds-mk a2\"></i><i class=\"ds-mk a3\"></i><i class=\"ds-mk a4\"></i><span class=\"ds-note\">signal · 100%</span></div>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-frame{position:relative;width:200px;aspect-ratio:4/5;margin:16px;background-color:#12151c;background-image:linear-gradient(rgba(6,7,10,.92) 1px,transparent 1px),linear-gradient(90deg,rgba(6,7,10,.92) 1px,transparent 1px);background-size:10px 10px} .ds-mk{position:absolute;width:22px;height:22px;border:2px solid var(--amber,#f0ab3e)} .a1{left:-8px;top:-8px;border-right:0;border-bottom:0} .a2{right:-8px;top:-8px;border-left:0;border-bottom:0} .a3{left:-8px;bottom:-8px;border-right:0;border-top:0} .a4{right:-8px;bottom:-8px;border-left:0;border-top:0} .ds-note{position:absolute;left:12px;bottom:12px;font:400 11.5px/1 var(--mono);color:var(--amber,#f0ab3e);background:var(--bg,#0e1117);padding:5px 7px;border:1px solid var(--amber,#f0ab3e);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Evidence Log Row",
+      "kind": "custom",
+      "description": "Ruled log row: amber exhibit ID, pixel thumbnail well, title and summary, accent type label, external arrow.",
+      "html": "<ul class=\"ds-log\"><li style=\"--c:#6b8cff\"><a href=\"#\"><span class=\"ds-id\">Exhibit C</span><span class=\"ds-th\"></span><span class=\"ds-t\"><b>XCSSET hunt</b><span>GitHub dorking turned up macOS malware in 40 public repositories.</span></span><span class=\"ds-ty\">Research</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"square\"><path d=\"M6 14 15 5M7 5h8v8\"/></svg></a></li></ul>",
+      "css": ":root{--bg:#0e1117;--ink:#e8eaf0;--soft:#a9afbd;--dim:#8a91a3;--line:rgba(255,255,255,.12);--line2:rgba(255,255,255,.07);--bone:#e3ddcc;--coral:#ec6a5e;--amber:#f0ab3e;--green:#55d394;--blue:#6b8cff;--sans:'Geist',system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,Menlo,monospace;--ease:cubic-bezier(.16,1,.3,1)} .ds-log{list-style:none;margin:0;padding:0;border-top:1px solid var(--line,rgba(255,255,255,.12));border-bottom:1px solid var(--line,rgba(255,255,255,.12));background:var(--bg,#0e1117)} .ds-log a{display:grid;grid-template-columns:78px 120px minmax(0,1fr) 90px 22px;gap:20px;align-items:center;padding:16px 10px 16px 0;text-decoration:none;color:var(--ink,#e8eaf0);transition:background .2s} .ds-log a:hover,.ds-log a:focus-visible{background:rgba(255,255,255,.035)} .ds-id{font:400 12px/1 var(--mono);color:var(--amber,#f0ab3e)} .ds-th{aspect-ratio:4/3;background:#12151c;border:1px solid var(--line2,rgba(255,255,255,.07));transition:border-color .25s} .ds-log a:hover .ds-th{border-color:var(--c)} .ds-t b{display:block;font:600 19px/1.25 var(--sans);letter-spacing:-.02em;transition:color .2s} .ds-log a:hover .ds-t b{color:var(--c)} .ds-t span{display:block;margin-top:3px;font:400 14.5px/1.4 var(--sans);color:var(--soft,#a9afbd)} .ds-ty{font:400 12px/1 var(--mono);color:var(--c)} .ds-log svg{color:var(--soft,#a9afbd);transition:transform .25s var(--ease),color .2s} .ds-log a:hover svg{transform:translate(2px,-2px);color:var(--c)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Case File",
+    "overview": "The site is a single filed report: a near-black sheet, inset from the viewport edge and ruled into cells by 1px hairlines, lying over a live canvas of 10px pixel cells where small bugs crawl and can be caught. Everything reads as a form someone filled in. Boxes are labelled by legends that sit on their rules, facts sit in mono field cells, and the work is entered as numbered findings, exhibits and log rows rather than cards. Density is that of a working document: generous display type at the top of each part, then tight ruled rows.\n\nColour is a classification, not decoration. Five accents each mean one kind of thing (a finding, an exhibit, a status or action, research, emphasis), and any element that carries one declares what it is. Type is one family in two voices: Geist, set large, heavy and tightly tracked for statements, and Geist Mono for every label, ID, date and number. Imagery is pixel art, built in whole cells and rendered with hard edges; the subject appears only as cell portraits, and the one softer view of him is a small smoothed layer seen through a glass lens.\n\nMotion is the report being read into view. Each part is revealed once by a green scan line travelling top to bottom across a gridded overlay, scroll is smoothed, and a few elements respond to scroll position. Nothing loops for attention except the status pulse and the live canvas.",
+    "keyCharacteristics": [
+      "Near-black sheet (#0e1117) ruled in white hairlines at 12% and 7%, no fills, no radius, no shadows.",
+      "A live 10px cell grid behind the sheet, visible through it, with pixel bugs on top.",
+      "Five semantic accents, each assigned per element through one local colour variable.",
+      "Geist display at weight 600 with -0.03 to -0.045em tracking; Geist Mono uppercase labels at 0.1em.",
+      "Legends on rules, a left margin column for section identity, ruled rows for content.",
+      "Pixel portraits (112x140 cells) in amber crop-mark frames with mono annotation notes, under a round glass lens."
+    ],
+    "rules": [
+      {
+        "name": "The Colour Declares Type Rule",
+        "body": "An accent says what an element is: coral is a finding, amber is evidence or an exhibit, green is status or action, blue is research, bone is emphasis or writing. Each component reads its accent from a single local colour variable set on the row or section; never pick an accent for looks.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Filled Door Rule",
+        "body": "Only the action button is a solid field of colour. Every other use of an accent is a 1px outline, a 7px square, a hairline underline or text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Field Rule",
+        "body": "Anything a form would print (a label, an ID, a date, a count, a ref, a status) is Geist Mono. Statements and prose are Geist. Never set a heading in mono or a field label in sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Statement Rule",
+        "body": "Display, headline and title sizes are always weight 600 with negative tracking (-0.02 to -0.045em) and line-height at or below 1.1. No light or regular weights at heading sizes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled Row Rule",
+        "body": "Content is entered as rows divided by hairlines, never as a grid of separate boxes. Each child carries its own padding; the rules are cell edges.",
+        "section": "layout"
+      },
+      {
+        "name": "The Paper Rule",
+        "body": "Surfaces never lift. If something needs separation, give it a hairline or a darker well, not a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every accent through the element's local colour variable and let the accent say what the thing is (coral finding, amber evidence, green status and action, blue research, bone emphasis).",
+      "**Do** divide space with 1px hairlines at 12% white for structure and 7% white for inner rows.",
+      "**Do** label a box with a legend sitting on its own rule, or with the margin column; field facts go in Geist Mono.",
+      "**Do** build imagery in whole pixel cells and render it pixelated, inside amber crop-mark frames when it is an exhibit; the glass lens is the only place a smoothed layer shows.",
+      "**Do** reveal each part of the page once with the green scan line using cubic-bezier(.16,1,.3,1), and drop every reveal, parallax and smoothing under prefers-reduced-motion.",
+      "**Do** keep the email action reachable from every scroll position (bar on desktop, fixed bottom bar on phones)."
+    ],
+    "donts": [
+      "**Don't** round a corner anywhere.",
+      "**Don't** add drop shadows or offset shadows; the sheet is paper.",
+      "**Don't** put a label line above a heading as a kicker or eyebrow; labels sit on rules or in the margin column.",
+      "**Don't** fill a surface with an accent other than the green action button.",
+      "**Don't** ship full-resolution photographs of the subject; portraits are cell portraits, with only the small lens layer smoothed.",
+      "**Don't** set content in separate floating cards; enter it as ruled rows.",
+      "**Don't** stand in Unicode glyphs or emoji for icons; icons are authored SVG with square caps."
+    ]
+  }
+}
