@@ -1,0 +1,22 @@
+{
+  "name": "mayankjoshi-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Static portfolio site. npm is only used for the sound module's tests and checks; the site itself has no build step.",
+  "scripts": {
+    "format": "prettier --write sfx.js tests",
+    "format:check": "prettier --check sfx.js tests",
+    "typecheck": "tsc --noEmit --allowJs --checkJs --strict --module nodenext --moduleResolution nodenext --target es2022 --lib es2022,dom,dom.iterable --skipLibCheck sfx.js",
+    "test": "vitest run",
+    "build": "node tests/check-site.mjs"
+  },
+  "dependencies": {
+    "uisfx": "0.4.0"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0",
+    "prettier": "3.3.3",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

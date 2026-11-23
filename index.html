@@ -30,6 +30,9 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- interface sound (sfx.js): uisfx is pinned to the same version as package.json -->
+<script type="importmap">{"imports":{"uisfx":"https://cdn.jsdelivr.net/npm/uisfx@0.4.0/dist/index.js"}}</script>
+<script type="module">import {boot} from './sfx.js';boot();</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://mayankjoshi.dev/","name":"Mayank Joshi | Security product builder","mainEntity":{"@type":"Person","@id":"https://mayankjoshi.dev/#mayank","name":"Mayank Joshi","url":"https://mayankjoshi.dev/","image":"https://mayankjoshi.dev/og.png","jobTitle":"Security product builder","email":"mailto:itsmayank227@gmail.com","description":"Security product builder: product, engineering, infrastructure and go-to-market for security products, with a background in detection engineering. Led RuleForge at TryHackMe from concept to monetisation.","knowsAbout":["Detection engineering","Security product management","SIEM","SOAR","EDR","Threat intelligence","Cloud security","MITRE ATT&CK"],"hasCredential":{"@type":"EducationalOccupationalCredential","name":"Google Cloud Professional Cloud Security Engineer","url":"https://www.credly.com/badges/5a81ef61-490d-4b1d-be2c-458f640daa62/public_url"},"sameAs":["https://www.linkedin.com/in/mayankjoshi-sec/","https://medium.com/@itsmayank227","https://github.com/mayank-joshi-01","https://tryhackme.com/p/switchbladeop"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +100,14 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .fld.att{margin-left:auto;border-right:0;border-left:1px solid var(--line);transition:background .2s}
 .fld.att:hover{background:rgba(255,255,255,.04)}
 .fld.att b{display:flex;align-items:center;gap:7px}
+/* sound toggle: a filled cell when on, an empty one when off; the toggles stay hidden until sfx.js loads */
+.fld.snd{background:none;border-width:0 1px 0 0;border-style:solid;border-color:var(--line);font:inherit;color:inherit;text-align:left;cursor:pointer;transition:background .2s}
+.fld.snd:hover{background:rgba(255,255,255,.04)}
+.fld.snd b,.bar-snd{display:flex;align-items:center;gap:8px}
+.fld.snd b::before,.bar-snd::before{content:"";width:7px;height:7px;flex:none;box-sizing:border-box;border:1px solid var(--soft)}
+.fld.snd[aria-pressed="true"] b::before,.bar-snd[aria-pressed="true"]::before{background:var(--green);border-color:var(--green)}
+.fld.snd[aria-pressed="false"] b,.bar-snd[aria-pressed="false"] b{color:var(--dim)}
+.fld.snd[hidden],.bar-snd[hidden]{display:none}
 
 .sum{position:relative;display:flex;flex-direction:column;gap:clamp(18px,2.4vh,26px);padding:clamp(36px,5.4vh,56px) var(--pd) var(--pd);border-right:1px solid var(--line)}
 .hl{margin:0;font-size:clamp(46px,min(8.1vw,12.6vh),118px);font-weight:600;line-height:.9;letter-spacing:-.045em;text-wrap:balance}
@@ -249,6 +260,9 @@ h2{font-size:clamp(38px,5.6vw,80px);font-weight:600;letter-spacing:-.04em;line-h
 .bar-cg[hidden]{display:none}
 .bar-cg::before{content:"";width:7px;height:7px;background:var(--blue)}
 .bar-cg span{color:var(--blue);font-weight:500}
+.bar-snd{background:none;border-width:0 1px 0 0;border-style:solid;border-color:var(--line);font-family:var(--mono);font-size:12.5px;color:var(--soft);cursor:pointer;transition:color .2s}
+.bar-snd:hover{color:var(--ink)}
+.bar-snd b{font-weight:500;color:var(--ink)}
 .bump{animation:bump .5s var(--ease)}
 @keyframes bump{from{color:#fff}}
 .bar .btn{margin-left:auto;min-height:0;border:0;border-left:1px solid var(--green);padding:0 24px}
@@ -357,7 +371,7 @@ html.lenis,html.lenis body{height:auto}
   .case{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;min-height:0}
   .hdr{flex-wrap:wrap}
   .fld{flex:1 1 40%;border-bottom:1px solid var(--line2);padding-bottom:22px}
-  .fld.lt{display:none}
+  .fld.lt,.fld.snd{display:none}
   .fld.att{margin-left:0;border-left:0}
   .sum{border-right:0;padding-top:40px}
   .ind{margin-top:6px}
@@ -414,7 +428,8 @@ html.lenis,html.lenis body{height:auto}
   .fld{flex-basis:50%}
   .fld b{font-size:12.5px}
   .fld.subj h1{font-size:15px}
-  .bar-cg{padding:0 10px}
+  .bar-cg,.bar > .bar-snd{padding:0 10px}
+  .bar-snd b{display:none}
   .bar .btn{padding:0 18px}
   .cta .btn{flex:1 1 calc(50% - 5px);padding:0 12px}
 }
@@ -448,6 +463,7 @@ html.lenis,html.lenis body{height:auto}
     <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
   </ul>
   <span class="bar-cg" id="barCg" hidden><span class="caught-n">0</span>&nbsp;caught</span>
+  <button class="bar-snd" type="button" data-sound-toggle aria-pressed="true" hidden>Sound<b data-sound-state aria-hidden="true">On</b></button>
   <a class="btn go" href="mailto:itsmayank227@gmail.com">Email Mayank <svg class="ic"><use href="#i-r"/></svg></a>
 </nav>
 
@@ -462,6 +478,7 @@ html.lenis,html.lenis body{height:auto}
       <div class="fld st"><span class="lbl">Status</span><b>Available now</b></div>
       <div class="fld lt"><span class="lbl">Local time</span><b id="clock">India (IST)</b></div>
       <div class="fld cg"><span class="lbl">Bugs caught</span><b><span class="caught-n">0</span> filed</b></div>
+      <button class="fld snd" type="button" data-sound-toggle aria-pressed="true" hidden><span class="lbl">Sound</span><b data-sound-state aria-hidden="true">On</b></button>
       <a class="fld att" href="resume.pdf" target="_blank" rel="noopener"><span class="lbl">Attached</span><b>resume.pdf <svg class="ic"><use href="#i-ne"/></svg></b></a>
     </header>
 
@@ -826,6 +843,8 @@ var lenis=null;
 if(!still&&window.Lenis){
   lenis=new Lenis({lerp:.09,wheelMultiplier:1,smoothWheel:true,syncTouch:false});
 }
+/* ---------- sound: cues go through sfx.js (window.siteSound), which stays silent until a real gesture, while muted, or if it failed to load ---------- */
+function sfx(cue,opts){var s=window.siteSound;return s?s.play(cue,opts):null;}
 function scrollToTarget(target,opts){
   opts=opts||{};
   if(lenis){lenis.scrollTo(target,{offset:opts.offset||0,duration:opts.duration||1.4,easing:function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}});return;}
@@ -1143,6 +1162,7 @@ function scored(){
   caughtEls.forEach(function(el){el.textContent=caught;el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');});
   barCg.hidden=false;barCg.setAttribute('aria-label','Bugs caught: '+caught);
   console.log('%c[+] threat contained ('+caught+')','font:12px ui-monospace,monospace;color:#6b8cff');
+  sfx('reward');
 }
 window.addEventListener('pointerdown',function(e){
   if(e.target.closest('a,button,dialog,.rail,.bar'))return;
@@ -1347,14 +1367,16 @@ var tlEl=document.querySelector('.tl'),tlRows=[].slice.call(document.querySelect
 tlRows.forEach(function(row){
   var n=+row.dataset.months||1,bar=row.querySelector('.tl-bar');
   for(var m=0;m<n;m++){var c=document.createElement('i');c.style.setProperty('--o',(.68+.32*h1(m*3.1+n)).toFixed(2));bar.appendChild(c);}
-  row.querySelector('.tl-head').addEventListener('click',function(){tlToggle(row);});
+  row.querySelector('.tl-head').addEventListener('click',function(){if(tlToggle(row))sfx(row.classList.contains('open')?'expand':'collapse');});
 });
+/* returns true when the row actually changed state */
 function tlToggle(row,force){
   var open=force==null?!row.classList.contains('open'):force;
-  if(open===row.classList.contains('open'))return;
+  if(open===row.classList.contains('open'))return false;
   row.classList.toggle('open',open);
   row.querySelector('.tl-head').setAttribute('aria-expanded',open?'true':'false');
   if(open&&!still)tlDecode(row);
+  return true;
 }
 /* the month pixels flicker through glyphs, then settle */
 function tlDecode(row){
@@ -1427,7 +1449,7 @@ if(tg){
 document.querySelectorAll('[data-open]').forEach(function(a){
   a.addEventListener('click',function(e){
     var row=document.getElementById(a.dataset.open);if(!row)return;
-    e.preventDefault();tlToggle(row,true);
+    e.preventDefault();if(tlToggle(row,true))sfx('expand');
     scrollToTarget(row,{offset:-window.innerHeight*.28});
   });
 });
@@ -1620,7 +1642,7 @@ if(!still){
   tabs.forEach(function(b){
     var f=b.dataset.f,n=items.filter(function(li){return f==='all'||li.dataset.tags.split(' ').indexOf(f)>=0;}).length;
     b.querySelector('small').textContent=n;
-    b.addEventListener('click',function(){filter(f);b.scrollIntoView({block:'nearest',inline:'nearest'});});
+    b.addEventListener('click',function(){var was=b.getAttribute('aria-pressed')==='true';filter(f);if(!was)sfx('select');b.scrollIntoView({block:'nearest',inline:'nearest'});});
   });
   function filter(f){
     tabs.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.f===f?'true':'false');});
@@ -1644,11 +1666,12 @@ if(!still){
   function open(){
     if(dlg.open)return;
     document.documentElement.classList.add('aw-open');if(lenis)lenis.stop();
-    dlg.showModal();inner.scrollTop=0;
+    dlg.showModal();inner.scrollTop=0;sfx('open');
     requestAnimationFrame(function(){filter('all');});
   }
   function close(){if(dlg.open)dlg.close();}
-  dlg.addEventListener('close',function(){document.documentElement.classList.remove('aw-open');if(lenis)lenis.start();});
+  /* follow: a row that opened its timeline entry already sounded for this click */
+  dlg.addEventListener('close',function(){document.documentElement.classList.remove('aw-open');if(lenis)lenis.start();sfx('close',{follow:true});});
   dlg.querySelector('.aw-x').addEventListener('click',close);
   dlg.addEventListener('click',function(e){if(e.target===dlg)close();});
   /* rows that point at a timeline commit: close first, so the page can scroll to it */
@@ -1734,7 +1757,7 @@ if(!still&&window.IntersectionObserver){
     var cv=document.createElement('canvas');cv.setAttribute('aria-hidden','true');cv.dataset.thumb=tp.dataset.thumb;
     shot.replaceChild(cv,shot.querySelector('canvas'));
     document.documentElement.classList.add('aw-open');if(lenis)lenis.stop();
-    from=trigger;dlg.showModal();inner.scrollTop=0;
+    from=trigger;dlg.showModal();inner.scrollTop=0;sfx('open');
     requestAnimationFrame(function(){
       var t=new Thumb(cv);t.build();if(!still){t.p=0;t.kick();}
       cv.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();t.mx=(e.clientX-r.left)/TH;t.my=(e.clientY-r.top)/TH;t.kick();});
@@ -1742,7 +1765,7 @@ if(!still&&window.IntersectionObserver){
     });
     return true;
   }
-  dlg.addEventListener('close',function(){document.documentElement.classList.remove('aw-open');if(lenis)lenis.start();if(from)from.focus({preventScroll:true});});
+  dlg.addEventListener('close',function(){document.documentElement.classList.remove('aw-open');if(lenis)lenis.start();if(from)from.focus({preventScroll:true});sfx('close',{follow:true});});
   dlg.querySelector('.wk-x').addEventListener('click',function(){dlg.close();});
   dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
   [].forEach.call(document.querySelectorAll('[data-work]'),function(a){
@@ -1815,8 +1838,10 @@ document.querySelector('.skip').addEventListener('click',function(){document.get
   b.addEventListener('click',function(){
     var v=b.getAttribute('data-copy');
     function done(ok){b.textContent=ok?'Copied':v;clearTimeout(t);t=setTimeout(function(){b.textContent=label;},2200);}
-    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(v).then(function(){done(true);},function(){done(false);});
-    else done(false);
+    var cb=navigator.clipboard,s=window.siteSound;
+    function write(){return cb&&cb.writeText?cb.writeText(v):Promise.reject(new Error('Clipboard unavailable'));}
+    /* copy sounds only once the write resolves; error only once it fails */
+    (s?s.track(write,{success:'copy',failure:'error'}):write()).then(function(){done(true);},function(){done(false);});
   });
 });
 

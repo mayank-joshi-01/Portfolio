@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static HTML/CSS/JS: a single `index.html` plus assets, deployed to GitHub Pages, no build step. Lenis (smooth scroll) is loaded from a pinned CDN version.
+Static HTML/CSS/JS: a single `index.html` plus assets, deployed to GitHub Pages, no build step. Lenis (smooth scroll) is loaded from a pinned CDN version. Interface sound uses `uisfx` (mechanical pack) through `sfx.js`, resolved by an import map to the same pinned version as `package.json`; npm is only used for its tests and checks (`npm test`, `npm run build`).
 
 ## Users
 

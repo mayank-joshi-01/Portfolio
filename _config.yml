@@ -4,3 +4,7 @@ exclude:
   - DESIGN.md
   - demo.gif
   - me/
+  - package.json
+  - package-lock.json
+  - node_modules/
+  - tests/
