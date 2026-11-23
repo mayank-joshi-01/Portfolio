@@ -16,7 +16,7 @@ Founders and hiring leads at security startups who are looking for an early hire
 
 ## Product Purpose
 
-The personal portfolio of Mayank Joshi. It exists to get him hired into a founding engineer or product role at a security startup (remote or in India; available immediately). Success means the visitor sends an email (itsmayank227@gmail.com) or a LinkedIn message.
+The personal portfolio of Mayank Joshi. It exists to get him hired into a founding engineer or product role at a security startup (remote or in India; available immediately). Success means the visitor sends an email (sayhi@mayankjoshi.dev) or a LinkedIn message.
 
 ## Positioning
 
